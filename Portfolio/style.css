@@ -7,7 +7,7 @@ body {
 }
 
 .title {
-    text-align: left;
+    text-align: center;
     margin-left: 50px;
     margin-right: auto;
     z-index: -1;
@@ -21,16 +21,19 @@ body {
     overflow: hidden;
     display: inline-flex;
     justify-content: flex-end;
+    left: 0;
     right: 0;
     top: 0;
     background-color: #f5d5a9;
     opacity: 97%;
+    border-style: dotted;
+    border-color: #472c22;
 }
 
 .navbar a {
     display: inline-block;
     text-align: center;
-    color: #ca6924;
+    color: #472c22;
     padding: 24px 20px;
     transition: .3s;
     text-decoration: none;
@@ -38,8 +41,8 @@ body {
 
 a:hover {
     opacity: 1;
-    background: #e3a678;
-    color: #873e23;
+    background: #e6bd94;
+    color: #472c22;
 }
 
 footer {
