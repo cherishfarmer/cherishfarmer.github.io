@@ -155,6 +155,17 @@ img {
     font-size: 40px;
 }
 
+.project-title {
+    color: #f5d5a9;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.project-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
     body {
         font-size: 16px;
