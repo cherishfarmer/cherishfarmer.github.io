@@ -28,6 +28,7 @@ body {
     opacity: 97%;
     border-style: dotted;
     border-color: #472c22;
+    z-index: 9;
 }
 
 .navbar a {
@@ -152,4 +153,36 @@ img {
 
 .main-bio {
     font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .column {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .short-bio {
+        font-size: 20px;
+    }
+    .main-bio {
+        font-size: 20px;
+    }
+    .navbar {
+        display: block;
+        width: 50%;
+    }
 }
