@@ -166,6 +166,40 @@ img {
     cursor: pointer;
 }
 
+.stats-item {
+    font-size: 1em;
+}
+
+.stats-heart {
+    color: #f5d5a9;
+    width: 1em;
+    height: 1em;
+    padding: 0;
+    padding-right: .01em;
+    top: .2em;
+    position: relative;
+}
+
+.inventory-icon {
+    height: 2em;
+    width: 2em;
+    background-blend-mode: overlay;
+    border-style: double;
+    padding: .25em;
+}
+
+.inventory-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: .75em;
+}
+
+.inventory-spacer {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
 @media screen and (max-width: 768px) {
     body {
         font-size: 16px;
