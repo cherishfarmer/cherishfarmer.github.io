@@ -177,10 +177,11 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1em;
 }
 
 .project-container {
-    flex: 1 1 calc(50%);
+    flex: 1 1 calc(50% - 1em);
 }
 
 .project-image {
