@@ -173,6 +173,24 @@ img {
     color: #472c22;
 }
 
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-container {
+    flex: 1 1 calc(50%);
+}
+
+.project-image {
+    width: 100%;
+    height: 22em;
+    object-fit: contain;
+    display: flex;
+    padding: 0 0 1em 0;
+}
+
 .stats-item {
     font-size: 1em;
 }
