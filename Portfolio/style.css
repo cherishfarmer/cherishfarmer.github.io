@@ -66,6 +66,17 @@ footer {
             blink-caret .75s step-end infinite;
 }
 
+.short-bio-about-me {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid #f5d5a9;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation:
+            typing-about-me 5s steps(40, end),
+            blink-caret .75s step-end infinite;
+}
+
 label, input {
     padding: 10px;
     margin: 10px;
@@ -88,6 +99,11 @@ input[id="message"] {
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
+}
+
+@keyframes typing-about-me {
+    from { width: 0 }
+    to { width: 74% }
 }
 
 @keyframes blink-caret {
