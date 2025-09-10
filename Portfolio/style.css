@@ -10,7 +10,6 @@ body {
 
 .title {
     text-align: center;
-    margin-left: 50px;
     margin-right: auto;
     z-index: -1;
     position: relative;
@@ -50,9 +49,8 @@ footer {
     top: 0;
     background-color: #f5d5a9;
     opacity: 97%;
-    border-style: dotted;
-    border-color: #472c22;
     z-index: 9;
+    font-weight: bold;
 }
 
 .navbar a {
