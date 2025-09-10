@@ -1,3 +1,5 @@
+/* General Styling */
+
 body {
     margin-left: 100px;
     margin-right: 100px;
@@ -14,6 +16,28 @@ body {
     position: relative;
     color: #ca6924;
 }
+
+img {
+    padding: 10px;
+    opacity: 90%;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+}
+
+.footer-text {
+    margin: 1em 0 1em 0;
+}
+
+.fa {
+    padding-top: 1em;
+    text-decoration: none;
+    color: #f5d5a9;
+}
+
+/* Navigation */
 
 .navbar {
     width: 100%;
@@ -46,16 +70,44 @@ body {
     color: #472c22;
 }
 
-footer {
-    text-align: center;
-    bottom: 0;
+/* Bio/Index */
+
+.bio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
 }
 
-.footer-text {
-    margin: 1em 0 1em 0;
+.bio img {
+    float: right;
+    opacity: 80%;
+    height: 25em;
+    width: auto;
+    margin-left: 5em;
+    margin-top: 20px;
+    z-index: -5;
+    background-blend-mode: overlay;
+    border-style: double;
+}
+
+.bio p {
+    float: left;
+    padding-right: 20%;
+}
+
+.about-me-bio {
+    float: left;
+    padding-right: 20%;
+    font-size: 1.25em;
+}
+
+.main-bio {
+    font-size: 2.5em;
+    width: 100%;
 }
 
 .short-bio {
+    font-size: 2em;
     display: inline-block;
     overflow: hidden;
     border-right: .15em solid #f5d5a9;
@@ -77,6 +129,12 @@ footer {
             blink-caret .75s step-end infinite;
 }
 
+/* Forms */
+
+.contact-form {
+
+}
+
 label, input {
     padding: 10px;
     margin: 10px;
@@ -89,16 +147,18 @@ input[type="text"], input[type="email"], input[type="submit"] {
 }
 
 input[type="text"], input[type="email"] {
-    padding-right: 200px;
+    padding-right: 25%;
 }
 
 input[id="message"] {
     padding-bottom: 100px;
 }
 
+/* Typing Animation */
+
 @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 80% }
 }
 
 @keyframes typing-about-me {
@@ -111,6 +171,8 @@ input[id="message"] {
     50% { border-color: #f5d5a9; }
 }
 
+/* Dividers */
+
 .top-bar {
     border-bottom: .2em solid #f5d5a9;
 }
@@ -120,24 +182,7 @@ input[id="message"] {
     width: 50%;
 }
 
-.bio {
-    display: flex;
-    flex-direction: row;
-}
-
-.bio img {
-    float: right;
-    opacity: 80%;
-    margin-top: 20px;
-    z-index: -5;
-    background-blend-mode: overlay;
-    border-style: double;
-}
-
-.bio p {
-    float: left;
-    padding-right: 30%;
-}
+/* Art */
 
 .art-buttons {
     position: relative;
@@ -159,11 +204,6 @@ input[id="message"] {
     background: #f5d5a9;
 }
 
-img {
-    padding: 10px;
-    opacity: 90%;
-}
-
 .main-art-text {
     font-family: "Courier";
     color: #472c22;
@@ -171,9 +211,7 @@ img {
     text-align: center;
 }
 
-.main-bio {
-    font-size: 40px;
-}
+/* Projects */
 
 .project-title {
     color: #f5d5a9;
@@ -207,6 +245,8 @@ img {
     display: flex;
     padding: 0 0 1em 0;
 }
+
+/* Stats and Inventory (About Me) */
 
 .stats-item {
     font-size: 1em;
@@ -242,11 +282,7 @@ img {
     margin-bottom: 1.25em;
 }
 
-.fa {
-    padding-top: 1em;
-    text-decoration: none;
-    color: #f5d5a9;
-}
+/* Responsive Adjustments */
 
 @media screen and (max-width: 768px) {
     body {
@@ -277,5 +313,11 @@ img {
     .navbar {
         display: block;
         width: 50%;
+    }
+    .bar {
+        width: 100%;
+    }
+    input[type="text"], input[type="email"] {
+        padding-right: 50%;
     }
 }
