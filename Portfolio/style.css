@@ -84,6 +84,7 @@ footer {
     margin-left: 5em;
     margin-top: 20px;
     z-index: -5;
+    border-radius: 25%;
     background-blend-mode: overlay;
     border-style: double;
 }
@@ -130,7 +131,7 @@ footer {
 /* Forms */
 
 .contact-form {
-
+    width: 200%;
 }
 
 label, input {
@@ -178,6 +179,11 @@ input[id="message"] {
 .bar {
     border-bottom: .15em solid #f5d5a9;
     width: 50%;
+}
+
+.bar-long {
+    border-bottom: .15em solid #f5d5a9;
+    width: 100%;
 }
 
 /* Art */
@@ -298,9 +304,9 @@ input[id="message"] {
 
 @media screen and (max-width: 480px) {
     body {
-        width: 100vh;
-        margin-left: 0;
-        margin-right: 0;
+        width: 112vh;
+        margin-left: 1em;
+        margin-right: 1em;
     }
     .short-bio {
         font-size: 20px;
@@ -309,8 +315,10 @@ input[id="message"] {
         font-size: 20px;
     }
     .navbar {
-        display: block;
-        width: 50%;
+        display: inline-flex;
+        justify-content: flex-end;
+        width: 100%;
+        font-size: .75em;
     }
     .bar {
         width: 100%;
@@ -318,4 +326,38 @@ input[id="message"] {
     input[type="text"], input[type="email"] {
         padding-right: 50%;
     }
+    .contact-form {
+        width: 60%;
+        padding-bottom: 1em;
+        justify-self: center;
+    }
+    .bio {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        float: none;
+        margin: 0;
+    }
+    .bio p {
+        float: none;
+        padding-right: 0;
+    }
+    .bio img {
+        height: auto;
+        justify-self: center;
+        margin-left: 0;
+    }
+    .about-me-bio {
+        float: none;
+        padding-right: 0;
+        font-size: 1.25em;
+    }
+    .short-bio-about-me {
+        font-size: 1em;
+    }
+    .top-bar {
+        width: 98%;
+    }
+    .bar {
+         width: 98%;
+     }
 }
