@@ -2,7 +2,7 @@
 
 Welcome to my personal website and portfolio! I built this to showcase my projects, art, and interests in technology, design, and psychology.
 
-🔗 [https://cherish.github.io](https://cherish.github.io)
+🔗 [https://cherish.github.io](https://cherishfarmer.github.io)
 
 ## 🌱 About
 This site serves as a digital home for my work, combining my interest in the intersection between technology and psychology. It includes my portfolio and contact information.
