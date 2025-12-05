@@ -1,11 +1,19 @@
 /* General Styling */
 
+:root {
+    --espresso: #1f1412;
+    --cream: #f3e5ab;
+    --pistachio: #a0b167;
+    --matcha: #606c38;
+}
+
 body {
     margin-left: 100px;
     margin-right: 100px;
-    font-family: "Courier";
-    background-color: #472c22;
-    color: #f5d5a9;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    background-color: var(--espresso);
+    color: var(--cream);
 }
 
 .title {
@@ -13,7 +21,7 @@ body {
     margin-right: auto;
     z-index: -1;
     position: relative;
-    color: #ca6924;
+    color: var(--pistachio);
 }
 
 img {
@@ -33,7 +41,7 @@ footer {
 .fa {
     padding-top: 1em;
     text-decoration: none;
-    color: #f5d5a9;
+    color: var(--cream);
 }
 
 /* Navigation */
@@ -47,16 +55,16 @@ footer {
     left: 0;
     right: 0;
     top: 0;
-    background-color: #f5d5a9;
+    background-color: var(--espresso);
     opacity: 97%;
     z-index: 9;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .navbar a {
     display: inline-block;
     text-align: center;
-    color: #472c22;
+    color: var(--cream);
     padding: 24px 20px;
     transition: .3s;
     text-decoration: none;
@@ -64,8 +72,7 @@ footer {
 
 .navbar a:hover {
     opacity: 1;
-    background: #e6bd94;
-    color: #472c22;
+    color: var(--pistachio);
 }
 
 /* Bio/Index */
@@ -109,9 +116,10 @@ footer {
     font-size: 2em;
     display: inline-block;
     overflow: hidden;
-    border-right: .15em solid #f5d5a9;
+    border-right: .15em solid var(--cream);
     white-space: nowrap;
     letter-spacing: .15em;
+    font-family: "Courier";
     animation:
             typing 5s steps(40, end),
             blink-caret .75s step-end infinite;
@@ -120,9 +128,10 @@ footer {
 .short-bio-about-me {
     display: inline-block;
     overflow: hidden;
-    border-right: .15em solid #f5d5a9;
+    border-right: .15em solid var(--cream);
     white-space: nowrap;
     letter-spacing: .15em;
+    font-family: "Courier";
     animation:
             typing-about-me 5s steps(40, end),
             blink-caret .75s step-end infinite;
@@ -140,9 +149,9 @@ label, input {
 }
 
 input[type="text"], input[type="email"], input[type="submit"] {
-    color: #bf6746;
-    background: #f5d5a9;
-    border-color: #bf6746;
+    color: var(--matcha);
+    background: var(--cream);
+    border-color: var(--pistachio);
 }
 
 input[type="text"], input[type="email"] {
@@ -167,22 +176,22 @@ input[id="message"] {
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #f5d5a9; }
+    50% { border-color: var(--cream); }
 }
 
 /* Dividers */
 
 .top-bar {
-    border-bottom: .2em solid #f5d5a9;
+    border-bottom: .2em solid var(--matcha);
 }
 
 .bar {
-    border-bottom: .15em solid #f5d5a9;
+    border-bottom: .15em solid var(--matcha);
     width: 50%;
 }
 
 .bar-long {
-    border-bottom: .15em solid #f5d5a9;
+    border-bottom: .15em solid var(--matcha);
     width: 100%;
 }
 
@@ -191,12 +200,12 @@ input[id="message"] {
 .art-buttons {
     position: relative;
     text-align: center;
-    color: #f5d5a9;
+    color: var(--cream);
 }
 
 .art-button {
     background-color: #fff;
-    border-color: #f5d5a9;
+    border-color: var(--cream);
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
@@ -205,12 +214,12 @@ input[id="message"] {
     display: inline-block;
     flex-direction: row;
     border-style: double;
-    background: #f5d5a9;
+    background: var(--cream);
 }
 
 .main-art-text {
     font-family: "Courier";
-    color: #472c22;
+    color: var(--espresso);
     position: relative;
     text-align: center;
 }
@@ -218,7 +227,7 @@ input[id="message"] {
 /* Projects */
 
 .project-title {
-    color: #f5d5a9;
+    color: var(--cream);
     font-size: 20px;
     text-decoration: none;
 }
@@ -227,8 +236,8 @@ input[id="message"] {
     text-decoration: underline;
     cursor: pointer;
     opacity: 1;
-    background: #e6bd94;
-    color: #472c22;
+    background: var(--matcha);
+    color: var(--espresso);
 }
 
 .projects-container {
@@ -257,7 +266,7 @@ input[id="message"] {
 }
 
 .stats-heart {
-    color: #f5d5a9;
+    color: var(--matcha);
     width: 1em;
     height: 1em;
     padding: 0;
