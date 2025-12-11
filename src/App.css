@@ -1,0 +1,436 @@
+/* General Styling */
+
+:root {
+  --espresso: #1f1412;
+  --cream: #f3e5ab;
+  --pistachio: #a0b167;
+  --matcha: #606c38;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  background-color: var(--espresso);
+  color: var(--cream);
+}
+
+.title {
+  text-align: center;
+  margin-right: auto;
+  z-index: -1;
+  position: relative;
+  color: var(--pistachio);
+}
+
+img {
+  padding: 10px;
+  opacity: 90%;
+}
+
+footer {
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  padding-top: 5em;
+}
+
+.footer-text {
+  margin: 1em 0 1em 0;
+}
+
+.fa {
+  padding-top: 1em;
+  padding-left: .5em;
+  padding-right: .5em;
+  text-decoration: none;
+  color: var(--cream);
+}
+
+/* Navigation */
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: flex-end;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: var(--espresso);
+  opacity: 97%;
+  z-index: 9;
+  /*font-weight: bold;*/
+}
+
+.navbar a {
+  display: inline-block;
+  text-align: center;
+  color: var(--cream);
+  padding: 24px 20px;
+  transition: .3s;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  opacity: 1;
+  color: var(--pistachio);
+}
+
+/* Bio/Index */
+
+.bio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.bio img {
+  float: right;
+  opacity: 80%;
+  height: 25em;
+  width: auto;
+  margin-left: 5em;
+  margin-top: 20px;
+  z-index: 5;
+  border-radius: 25%;
+  background-blend-mode: overlay;
+  border-style: double;
+}
+
+.bio p {
+  float: left;
+  padding-right: 20%;
+}
+
+.about-me-bio {
+  float: left;
+  padding-right: 20%;
+  font-size: 1.25em;
+}
+
+.main-bio {
+  font-size: 2.5em;
+  width: 100%;
+}
+
+.short-bio {
+  font-size: 2em;
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid var(--cream);
+  white-space: nowrap;
+  letter-spacing: .15em;
+  font-family: "Courier";
+  animation:
+          typing 5s steps(40, end),
+          blink-caret .75s step-end infinite;
+}
+
+.short-bio-about-me {
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid var(--cream);
+  white-space: nowrap;
+  letter-spacing: .15em;
+  font-family: "Courier";
+  animation:
+          typing-about-me 5s steps(40, end),
+          blink-caret .75s step-end infinite;
+}
+
+/* Forms */
+
+.contact-form {
+  width: 100%;
+}
+
+label, input {
+  padding: 10px;
+  margin: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="submit"] {
+  color: var(--matcha);
+  background: var(--cream);
+  border-color: var(--pistachio);
+}
+
+input[type="text"], input[type="email"] {
+  padding-right: 50%;
+}
+
+input[id="message"] {
+  padding-bottom: 100px;
+}
+
+/* Typing Animation */
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+
+@keyframes typing-about-me {
+  from { width: 0 }
+  to { width: 74% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--cream); }
+}
+
+/* Dividers */
+
+.top-bar {
+  border-bottom: .2em solid var(--matcha);
+}
+
+.bar {
+  border-bottom: .15em solid var(--matcha);
+  width: 50%;
+}
+
+.bar-long {
+  border-bottom: .15em solid var(--matcha);
+  width: 100%;
+}
+
+/* Art */
+
+.art-buttons {
+  position: relative;
+  text-align: center;
+  color: var(--cream);
+}
+
+.art-button {
+  background-color: #fff;
+  border-color: var(--cream);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.main-art img {
+  display: inline-block;
+  flex-direction: row;
+  border-style: double;
+  background: var(--cream);
+}
+
+.main-art-text {
+  font-family: "Courier";
+  color: var(--espresso);
+  position: relative;
+  text-align: center;
+}
+
+/* Projects */
+
+.project-title {
+  color: var(--cream);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.project-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 1;
+  background: var(--matcha);
+  color: var(--espresso);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.project-container {
+  flex: 1 1 calc(50% - 1em);
+}
+
+.project-image {
+  width: 100%;
+  height: 22em;
+  object-fit: contain;
+  display: flex;
+  padding: 0 0 1em 0;
+}
+
+/* Stats and Inventory (About Me) */
+
+.stats-item {
+  font-size: 1em;
+}
+
+.stats-heart {
+  color: var(--matcha);
+  width: 1em;
+  height: 1em;
+  padding-right: .01em;
+  padding-top: 0;
+  padding-bottom: 0;
+  top: .2em;
+  position: relative;
+}
+
+.inventory-icon {
+  height: 2em;
+  width: 2em;
+  background-blend-mode: overlay;
+  border-style: double;
+  padding: .25em;
+}
+
+.inventory-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: .75em;
+}
+
+.inventory-spacer {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.about-bottom-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2em;
+  align-items: start;
+}
+
+.contact-section {
+
+}
+
+.inventory-stats-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* COOL TRANSITION STUFF */
+
+.page-enter {
+  opacity: 1;
+}
+
+.page-enter-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
+}
+
+.page-exit {
+  opacity: 0;
+}
+
+.page-exit-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-out;
+}
+
+.page-wrapper {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-bottom-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Adjustments */
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  .column {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 112vh;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .short-bio {
+    font-size: 20px;
+  }
+  .main-bio {
+    font-size: 20px;
+  }
+  .navbar {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: .75em;
+  }
+  .bar {
+    width: 100%;
+  }
+  input[type="text"], input[type="email"] {
+    padding-right: 50%;
+  }
+  .contact-form {
+    width: 60%;
+    padding-bottom: 1em;
+    justify-self: center;
+  }
+  .bio {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    float: none;
+    margin: 0;
+  }
+  .bio p {
+    float: none;
+    padding-right: 0;
+  }
+  .bio img {
+    height: auto;
+    justify-self: center;
+    margin-left: 0;
+  }
+  .about-me-bio {
+    float: none;
+    padding-right: 0;
+    font-size: 1.25em;
+  }
+  .short-bio-about-me {
+    font-size: 1em;
+  }
+  .top-bar {
+    width: 98%;
+  }
+  .bar {
+    width: 98%;
+  }
+}
