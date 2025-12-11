@@ -37,32 +37,32 @@ export const About = () => {
 
                     <div className="inventory-spacer"></div>
                     <div className="inventory-container">
-                        <img className="inventory-icon" src="/public/inventory-icons/git.png"/>
-                        <img className="inventory-icon" src="/public/inventory-icons/github.png"/>
-                        <img className="inventory-icon" src="/public/inventory-icons/c.png"/>
-                        <img className="inventory-icon" src="/public/inventory-icons/c++.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/git.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/github.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/c.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/c++.png"/>
                         <img className="inventory-icon"
-                             src="/public/inventory-icons/181_Java_logo_logos-512.webp"/>
+                             src="/inventory-icons/181_Java_logo_logos-512.webp"/>
                         <img className="inventory-icon"
-                             src="/public/inventory-icons/python_logo_icon_168886.png"/>
-                        <img className="inventory-icon" src="/public/inventory-icons/html-logo.png"/>
-                        <img className="inventory-icon" src="/public/inventory-icons/css-logo.png"/>
-                        <img className="inventory-icon" src="/public/inventory-icons/JavaScript-logo.png"/>
-                        <img className="inventory-icon" src="/public/inventory-icons/easy68k.png"/>
-                        <img className="inventory-icon" src="/public/inventory-icons/jira.png"/>
-                        <img className="inventory-icon" src="/public/inventory-icons/confluence.jpg"/>
+                             src="/inventory-icons/python_logo_icon_168886.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/html-logo.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/css-logo.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/JavaScript-logo.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/easy68k.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/jira.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/confluence.jpg"/>
                     </div>
 
                     <div className="inventory-container">
                         <img className="inventory-icon"
-                             src="/public/inventory-icons/Visual_Studio_Icon_2022.svg.png"/>
+                             src="/inventory-icons/Visual_Studio_Icon_2022.svg.png"/>
                         <img className="inventory-icon"
-                             src="/public/inventory-icons/jetbrains_icon_146158.png"/>
-                        <img className="inventory-icon" src="/public/inventory-icons/microsoftoffice.png"/>
-                        <img className="inventory-icon" src="/public/inventory-icons/p4v.png"/>
+                             src="/inventory-icons/jetbrains_icon_146158.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/microsoftoffice.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/p4v.png"/>
                         <img className="inventory-icon"
-                             src="/public/inventory-icons/unreal-engine-icon-md.png"/>
-                        <img className="inventory-icon" src="/public/inventory-icons/unity.png"/>
+                             src="/inventory-icons/unreal-engine-icon-md.png"/>
+                        <img className="inventory-icon" src="/inventory-icons/unity.png"/>
                     </div>
                     <div className="inventory-spacer"></div>
 
@@ -71,59 +71,59 @@ export const About = () => {
                     <div className="bar-long"></div>
 
                     <p className="stats-item">- Communication:
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                     </p>
 
                     <p className="stats-item">- Leadership:
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/emptyheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/emptyheart.png"/>
                     </p>
 
                     <p className="stats-item">- Teamwork:
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/emptyheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/emptyheart.png"/>
                     </p>
 
                     <p className="stats-item">- Time Management:
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                     </p>
 
                     <p className="stats-item">- Conflict Resolution:
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/emptyheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/emptyheart.png"/>
                     </p>
 
                     <p className="stats-item">- Customer Service:
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/emptyheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/emptyheart.png"/>
                     </p>
 
                     <p className="stats-item">- Instruction:
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/fullheart.png"/>
-                        <img className="stats-heart" src="/public/heart-icons/emptyheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                        <img className="stats-heart" src="/heart-icons/emptyheart.png"/>
                     </p>
                 </div>
 
