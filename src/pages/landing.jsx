@@ -13,7 +13,7 @@ export const Landing = () => {
                     <p>I hope you enjoy exploring my website!</p>
                     <p>I would love for you to reach out as well!</p>
                 </div>
-                <img src="/media/portraitme.png" alt="My portrait"/>
+                <img src="/media/portraitme.png" alt="My portrait" style={ { marginBottom: 10 }} />
             </div>
 
             <div style={{ paddingTop: 5 }}>
