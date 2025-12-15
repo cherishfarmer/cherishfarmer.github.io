@@ -8,8 +8,10 @@ Welcome to my personal website and portfolio! I built this to showcase my projec
 This site serves as a digital home for my work, combining my interest in the intersection between technology and psychology. It includes my portfolio and contact information.
 
 ## 🧰 Tech Stack
-- HTML, CSS, JavaScript
-- GitHub Pages for hosting
+- **Frontend:** React 18, React Router
+- **Build Tool:** Vite
+- **Styling:** CSS3
+- **Hosting:** GitHub Pages
 
 Explore around to learn more about me and what I've worked on! Feel free to contact me using the form on my website. 
 
