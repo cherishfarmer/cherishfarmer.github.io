@@ -134,7 +134,7 @@ footer {
   letter-spacing: .15em;
   font-family: "Courier";
   animation:
-          typing 5s steps(40, end),
+          typing 3.5s steps(40, end) forwards,
           blink-caret .75s step-end infinite;
 }
 
@@ -146,7 +146,7 @@ footer {
   letter-spacing: .15em;
   font-family: "Courier";
   animation:
-          typing-about-me 5s steps(40, end),
+          typing-about-me 4s steps(48, end) forwards,
           blink-caret .75s step-end infinite;
 }
 
@@ -167,8 +167,35 @@ input[type="text"], input[type="email"], input[type="submit"] {
   border-color: var(--pistachio);
 }
 
-input[type="text"], input[type="email"] {
-  padding-right: 50%;
+input[type="text"], input[type="email"], textarea {
+  width: 75%;
+}
+
+input[id="message"] {
+  padding-bottom: 100px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--matcha);
+  opacity: 0.75;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+textarea {
+  padding: 10px;
+  margin: 10px;
+  color: var(--matcha);
+  background: var(--cream);
+  border-color: var(--pistachio);
+  font-family: 'Inter', sans-serif;
+  resize: vertical;
+  min-height: 100px;
 }
 
 input[id="message"] {
@@ -178,13 +205,21 @@ input[id="message"] {
 /* Typing Animation */
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 80% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 49ch;
+  }
 }
 
 @keyframes typing-about-me {
-  from { width: 0 }
-  to { width: 74% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 58ch;
+  }
 }
 
 @keyframes blink-caret {
