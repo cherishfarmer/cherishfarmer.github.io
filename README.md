@@ -15,4 +15,4 @@ This site serves as a digital home for my work, combining my interest in the int
 
 Explore around to learn more about me and what I've worked on! Feel free to contact me using the form on my website. 
 
-<img width="653" height="521" alt="personalwebsite-ss" src="https://github.com/user-attachments/assets/945c1f1b-efba-45c8-a53e-5b85a5d8b9e6" />
+<img width="1130" height="591" alt="personalwebsite-ss" src="https://github.com/user-attachments/assets/2e5473ba-4943-4a64-86bd-2ab183a7a2d1" />
