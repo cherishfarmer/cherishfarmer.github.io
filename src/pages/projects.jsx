@@ -16,7 +16,7 @@ export const ProjectContainer = ( { href, title, description, src, github }) => 
 
 export const Projects = () => {
     return (
-        <div style={{paddingTop: 100}}>
+        <div className="page-body">
             <h2>♡ My Projects</h2>
             <div className="top-bar"></div>
             <p></p>

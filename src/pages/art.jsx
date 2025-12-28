@@ -3,7 +3,7 @@ import "../App.css";
 
 export const Art = () => {
     return (
-        <div style={ { paddingTop: 100 }}>
+        <div className="page-body">
             <h2>♡ My Artwork</h2>
             <div className="top-bar"></div>
             <p></p>

@@ -1,10 +1,24 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "../App.css";
 import {ContactForm} from "../components/contact-form.jsx";
 
 export const Landing = () => {
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 480);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
-        <div style={ { paddingTop: 100 }}>
+        <div className="page-body">
             <h2 className="short-bio">Hi! I'm Cherish, nice to meet you. :) ♡</h2>
             <div className="top-bar"></div>
             <div className="bio">
@@ -16,18 +30,34 @@ export const Landing = () => {
                 <img src="/media/portraitme.png" alt="My portrait" style={ { marginBottom: 10 }} />
             </div>
 
-            <div style={{ paddingTop: 5 }}>
-                <div className="bar-long"></div>
-                <h3 id="contact">♡ Contact (cherishdfarmer@gmail.com)</h3>
-                <div className="bar-long"></div>
+            {isMobile ? (
+                <div style={{ paddingTop: 5 }}>
+                    <div className="bar-long"></div>
+                    <h3 id="contact">♡ Contact (cherishdfarmer@gmail.com)</h3>
+                    <div className="bar-long"></div>
 
-                <div className="bio" style={{ paddingTop: 20 }}>
-                    <ContactForm />
+                    <div className="bio" style={{paddingTop: 20}}>
+                        <img src="/media/mycat.jpg" style={{marginTop: 0}} alt="My Cat"/>
 
-                    <img src="/media/mycat.jpg" style={{ marginTop: 0 }} alt="My Cat"/>
+                        <ContactForm/>
+                    </div>
+
                 </div>
+            ) : (
+                <div style={{paddingTop: 5}}>
+                    <div className="bar-long"></div>
+                    <h3 id="contact">♡ Contact (cherishdfarmer@gmail.com)</h3>
+                    <div className="bar-long"></div>
 
-            </div>
+                    <div className="bio" style={{paddingTop: 20}}>
+                        <ContactForm/>
+
+                        <img src="/media/mycat.jpg" style={{marginTop: 0}} alt="My Cat"/>
+                    </div>
+
+                </div>
+            )}
+
         </div>
     )
 }

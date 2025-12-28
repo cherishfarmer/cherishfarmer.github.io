@@ -33,6 +33,10 @@ img {
   opacity: 90%;
 }
 
+.page-body {
+  padding-top: 5em;
+}
+
 footer {
   text-align: center;
   bottom: 0;
@@ -246,6 +250,9 @@ input[id="message"] {
 /* Art */
 
 .art-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, .5fr);
+  gap: 1em;
   position: relative;
   text-align: center;
   color: var(--cream);
@@ -258,11 +265,11 @@ input[id="message"] {
   margin-bottom: 20px;
 }
 
-.main-art img {
+img.main-art {
   display: inline-block;
-  flex-direction: row;
-  border-style: double;
-  background: var(--cream);
+  border: .1em double var(--cream);
+  height: 250px;
+  width: 250px;
 }
 
 .main-art-text {
@@ -270,6 +277,18 @@ input[id="message"] {
   color: var(--espresso);
   position: relative;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .art-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, .5fr);
+    gap: 1em;
+  }
+  img.main-art {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 /* Projects */
@@ -297,6 +316,9 @@ input[id="message"] {
 @media screen and (max-width: 480px) {
   .projects-container {
     grid-template-columns: 1fr;
+  }
+  img.project-image {
+    width: 100%;
   }
 }
 
@@ -441,9 +463,8 @@ input[id="message"] {
 
 @media screen and (max-width: 480px) {
   body {
-    width: 112vh;
-    margin-left: 1em;
-    margin-right: 1em;
+    width: 100%;
+    overflow: hidden;
   }
   .short-bio {
     font-size: 20px;
@@ -452,21 +473,47 @@ input[id="message"] {
     font-size: 20px;
   }
   .navbar {
-    display: inline-flex;
-    justify-content: flex-end;
-    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     font-size: .75em;
+    padding-top: 1em;
+  }
+  .title {
+    width: 100%;
+    order: -1;
+    padding: 1em;
+    font-size: 2.5em;
+  }
+  .navbar-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1em 1em 1em;
+  }
+  .navbar a {
+    flex-direction: row;
+  }
+  .page-body {
+    padding-top: 12.5em;
   }
   .bar {
     width: 100%;
   }
-  input[type="text"], input[type="email"] {
+  input[type="text"], input[type="email"], textarea {
     padding-right: 50%;
   }
+  input[type="submit"] {
+    width: 127.5%;
+    margin-bottom: 2.5em;
+  }
   .contact-form {
-    width: 60%;
+    width: 75%;
     padding-bottom: 1em;
-    justify-self: center;
+    justify-self: left;
+    order: 5;
   }
   .bio {
     display: grid;
@@ -492,7 +539,7 @@ input[id="message"] {
     font-size: 1em;
   }
   .top-bar {
-    width: 98%;
+    width: 100%;
   }
   .bar {
     width: 98%;
