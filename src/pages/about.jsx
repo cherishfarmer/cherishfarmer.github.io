@@ -205,7 +205,7 @@ export const About = () => {
                             <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                             <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                             <img className="stats-heart" src="/heart-icons/fullheart.png"/>
-                            <img className="stats-heart" src="/heart-icons/emptyheart.png"/>
+                            <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                         </p>
 
                         <p className="stats-item">- Teamwork:
@@ -213,7 +213,7 @@ export const About = () => {
                             <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                             <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                             <img className="stats-heart" src="/heart-icons/fullheart.png"/>
-                            <img className="stats-heart" src="/heart-icons/emptyheart.png"/>
+                            <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                         </p>
 
                         <p className="stats-item">- Time Management:
@@ -221,7 +221,7 @@ export const About = () => {
                             <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                             <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                             <img className="stats-heart" src="/heart-icons/fullheart.png"/>
-                            <img className="stats-heart" src="/heart-icons/fullheart.png"/>
+                            <img className="stats-heart" src="/heart-icons/emptyheart.png"/>
                         </p>
 
                         <p className="stats-item">- Conflict Resolution:
@@ -229,7 +229,7 @@ export const About = () => {
                             <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                             <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                             <img className="stats-heart" src="/heart-icons/fullheart.png"/>
-                            <img className="stats-heart" src="/heart-icons/emptyheart.png"/>
+                            <img className="stats-heart" src="/heart-icons/fullheart.png"/>
                         </p>
 
                         <p className="stats-item">- Customer Service:
