@@ -33,19 +33,28 @@ export const Projects = () => {
                     />
 
                     <ProjectContainer
-                        href="https://cherubyte.itch.io/love-me-love-me-not"
-                        title=" Love Me, Love Me Not (2024-2025)"
-                        description="Retro twist on a classic game. (Unity, C#, Aseprite)"
-                        src="/project-images/lovemenot-ss.png"
-                        github="https://github.com/cherishfarmer/love-me-love-me-not"
-                    />
-
-                    <ProjectContainer
                         href="https://cherishfarmer.github.io/visual-snow-simulator/"
                         title=" Visual Snow Simulator (2025)"
                         description="An interactive web tool to help people understand what Visual Snow Syndrome (VSS) looks like. (HTML/CSS/JavaScript)"
                         src="/project-images/vss-ss.png"
                         github="https://github.com/cherishfarmer/visual-snow-simulator"
+                    />
+
+                    <ProjectContainer
+                        href="https://sweetdots-scheduler.vercel.app/"
+                        title=" Sweet Dots Schedule (2026)"
+                        description="A modern employee scheduling web application that integrates Google Sheets API to display schedules beautifully and conveniently while maintaining privacy and security.
+                        (React, Tailwind, Google Sheets API, Vercel)"
+                        src="/project-images/sweetdots-scheduler-ss.png"
+                        github="https://github.com/cherishfarmer/sweetdots-scheduler"
+                    />
+
+                    <ProjectContainer
+                        href="https://cherubyte.itch.io/love-me-love-me-not"
+                        title=" Love Me, Love Me Not (2024-2025)"
+                        description="Retro twist on a classic game. (Unity, C#, Aseprite)"
+                        src="/project-images/lovemenot-ss.png"
+                        github="https://github.com/cherishfarmer/love-me-love-me-not"
                     />
 
                     <ProjectContainer
