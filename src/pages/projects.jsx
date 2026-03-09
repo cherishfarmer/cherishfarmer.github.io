@@ -50,6 +50,15 @@ export const Projects = () => {
                     />
 
                     <ProjectContainer
+                        href="https://sweetdots-inventory.vercel.app/"
+                        title=" Sweet Dots Inventory Manager (2026)"
+                        description="A full-stack inventory management system for café operations featuring real-time tracking, automated email reports, and role-based authentication with admin dashboard for employee and item management.
+                        (Next.js, TypeScript, PostgreSQL, Tailwind, JWT Auth, Vercel)"
+                        src="/project-images/sdinventory-ss.png"
+                        github="https://github.com/cherishfarmer/sweetdots-inventory"
+                    />
+
+                    <ProjectContainer
                         href="https://cherubyte.itch.io/love-me-love-me-not"
                         title=" Love Me, Love Me Not (2024-2025)"
                         description="Retro twist on a classic game. (Unity, C#, Aseprite)"
