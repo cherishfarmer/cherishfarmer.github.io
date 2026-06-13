@@ -6,7 +6,11 @@ export const ProjectContainer = ( { href, title, description, src, github }) => 
         <div className="project-container">
             <a className="project-title" href={href}>♡{title}</a>
             <br/>
-            <a className="github-link" href={github}>Github</a>
+            {github ? (
+                <a className="github-link" href={github}>Github</a>
+            ) : (
+                <span className="github-link">Private</span>
+            )}
             <p className="project-description">{description}</p>
             <img className="project-image"
                  src={src} alt={description}/>
@@ -24,20 +28,12 @@ export const Projects = () => {
                 <div className="projects-container">
 
                     <ProjectContainer
-                        href="https://github.com/cherishfarmer/minesweeper-assembly"
-                        title=" Minesweeper in Assembly (2025)"
-                        description="Recreated classic Minesweeper in 68k
-                            Assembly. (Assembly)"
-                        src="/project-images/minesweeper-ss.png"
-                        github="https://github.com/cherishfarmer/minesweeper-assembly"
-                    />
-
-                    <ProjectContainer
-                        href="https://cherishfarmer.github.io/visual-snow-simulator/"
-                        title=" Visual Snow Simulator (2025)"
-                        description="An interactive web tool to help people understand what Visual Snow Syndrome (VSS) looks like. (HTML/CSS/JavaScript)"
-                        src="/project-images/vss-ss.png"
-                        github="https://github.com/cherishfarmer/visual-snow-simulator"
+                        href="https://sweetdots-inventory.vercel.app/"
+                        title=" Sweet Dots Inventory Manager (2026)"
+                        description="A full-stack inventory management system for café operations featuring real-time tracking, automated email reports, and role-based authentication with admin dashboard for employee and item management.
+                        (Next.js, TypeScript, PostgreSQL, Tailwind, JWT Auth, Vercel)"
+                        src="/project-images/sdinventory-ss.png"
+                        github="https://github.com/cherishfarmer/sweetdots-inventory"
                     />
 
                     <ProjectContainer
@@ -50,38 +46,19 @@ export const Projects = () => {
                     />
 
                     <ProjectContainer
-                        href="https://sweetdots-inventory.vercel.app/"
-                        title=" Sweet Dots Inventory Manager (2026)"
-                        description="A full-stack inventory management system for café operations featuring real-time tracking, automated email reports, and role-based authentication with admin dashboard for employee and item management.
-                        (Next.js, TypeScript, PostgreSQL, Tailwind, JWT Auth, Vercel)"
-                        src="/project-images/sdinventory-ss.png"
-                        github="https://github.com/cherishfarmer/sweetdots-inventory"
+                        href="https://faunologytd.com/"
+                        title=" Faunology Tower Defense (2026)"
+                        description="A tower defense game featuring fauna-themed gameplay."
+                        src="/project-images/faunology-ss.png"
+                        github="https://github.com/cherishfarmer/faunology"
                     />
 
                     <ProjectContainer
-                        href="https://cherubyte.itch.io/love-me-love-me-not"
-                        title=" Love Me, Love Me Not (2024-2025)"
-                        description="Retro twist on a classic game. (Unity, C#, Aseprite)"
-                        src="/project-images/lovemenot-ss.png"
-                        github="https://github.com/cherishfarmer/love-me-love-me-not"
-                    />
-
-                    <ProjectContainer
-                        href="https://cherishfarmer.github.io/"
-                        title=" Personal Website (2024-Present)"
-                        description="Personal website showcasing artwork and projects worked on.
-                            Includes information about me, my resume,
-                            and a contact form that goes to my email. (React, Vite, HTML, CSS, JavaScript)"
-                        src="/project-images/personalwebsite-ss.png"
-                        github="https://github.com/cherishfarmer/cherishfarmer.github.io"
-                    />
-
-                    <ProjectContainer
-                        href="https://cherishfarmer.github.io/multitasking-experiment/"
-                        title=" Multitasking Experiment (2025)"
-                        description="A prototype to run a multitasking experiment. Had over 100 participants. (HTML, CSS, JavaScript, jsPsych)"
-                        src="/project-images/multitasking-ss.png"
-                        github="https://github.com/cherishfarmer/multitasking-experiment"
+                        href="https://vanderbiltgsc.vercel.app/"
+                        title=" Graduate Student Council Website (2026)"
+                        description="Website for Vanderbilt's Graduate Student Council."
+                        src="/project-images/gsc-ss.png"
+                        github={null}
                     />
 
                     <ProjectContainer
@@ -97,12 +74,46 @@ export const Projects = () => {
                     />
 
                     <ProjectContainer
-                        href="https://universityconcertband.github.io/"
-                        title=" Concert Band Website (2024-2025)"
-                        description="Website for Vanderbilt's University Concert Band
-                            that provides information about the organization. (HTML/CSS/JavaScript)"
-                        src="/project-images/ucb-ss.png"
-                        github="https://github.com/UniversityConcertBand/universityconcertband.github.io"
+                        href="https://cherishfarmer.github.io/"
+                        title=" Personal Website (2024-Present)"
+                        description="Personal website showcasing artwork and projects worked on.
+                            Includes information about me, my resume,
+                            and a contact form that goes to my email. (React, Vite, HTML, CSS, JavaScript)"
+                        src="/project-images/personalwebsite-ss.png"
+                        github="https://github.com/cherishfarmer/cherishfarmer.github.io"
+                    />
+
+                    <ProjectContainer
+                        href="https://github.com/cherishfarmer/minesweeper-assembly"
+                        title=" Minesweeper in Assembly (2025)"
+                        description="Recreated classic Minesweeper in 68k
+                            Assembly. (Assembly)"
+                        src="/project-images/minesweeper-ss.png"
+                        github="https://github.com/cherishfarmer/minesweeper-assembly"
+                    />
+
+                    <ProjectContainer
+                        href="https://cherishfarmer.github.io/multitasking-experiment/"
+                        title=" Multitasking Experiment (2025)"
+                        description="A prototype to run a multitasking experiment. Had over 100 participants. (HTML, CSS, JavaScript, jsPsych)"
+                        src="/project-images/multitasking-ss.png"
+                        github="https://github.com/cherishfarmer/multitasking-experiment"
+                    />
+
+                    <ProjectContainer
+                        href="https://cardishgames.com/game/6a2d89d1857a23914dad32aa"
+                        title=" Cardish Games (2025)"
+                        description="A card-based game built for the Cardish Games platform."
+                        src="/project-images/cardish-ss.png"
+                        github={null}
+                    />
+
+                    <ProjectContainer
+                        href="https://cherishfarmer.github.io/visual-snow-simulator/"
+                        title=" Visual Snow Simulator (2025)"
+                        description="An interactive web tool to help people understand what Visual Snow Syndrome (VSS) looks like. (HTML/CSS/JavaScript)"
+                        src="/project-images/vss-ss.png"
+                        github="https://github.com/cherishfarmer/visual-snow-simulator"
                     />
 
                     <ProjectContainer
@@ -112,6 +123,23 @@ export const Projects = () => {
                         featuring rotating quotes with a dreamy background. (HTML/CSS/JavaScript)"
                         src="/project-images/selfbloom-ss.png"
                         github="https://github.com/cherishfarmer/self-bloom"
+                    />
+
+                    <ProjectContainer
+                        href="https://cherubyte.itch.io/love-me-love-me-not"
+                        title=" Love Me, Love Me Not (2024-2025)"
+                        description="Retro twist on a classic game. (Unity, C#, Aseprite)"
+                        src="/project-images/lovemenot-ss.png"
+                        github="https://github.com/cherishfarmer/love-me-love-me-not"
+                    />
+
+                    <ProjectContainer
+                        href="https://universityconcertband.vercel.app/"
+                        title=" Concert Band Website (2024-2025)"
+                        description="Website for Vanderbilt's University Concert Band
+                            that provides information about the organization. (HTML/CSS/JavaScript)"
+                        src="/project-images/ucb-ss.png"
+                        github="https://github.com/UniversityConcertBand/universityconcertband.github.io"
                     />
 
                     <div className="project-container">

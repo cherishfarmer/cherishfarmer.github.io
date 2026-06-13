@@ -25,13 +25,11 @@ export const About = () => {
 
             <div className="bar"></div>
             <div className="bio">
-                <p className="about-me-bio">I am currently a senior student at Vanderbilt University majoring in
-                    computer science and psychology
-                    with a minor in art. I am interested in how art and computer science can be integrated,
-                    such as through video game design.<br/><br/>
+                <p className="about-me-bio">I am a Vanderbilt University graduate with a bachelor's in computer science
+                    and psychology and a minor in art. Currently I work as a software developer in the Nashville area.<br/><br/>
 
-                    In my free time, I enjoy drawing, playing flute and saxophone, weight-lifting, and thrifting.
-                    I am also a boba addict that helps manage a boba shop in Nashville.</p>
+                    In my free time, I do game development, weight-lift, thrift, and try new cafes. I love playing video
+                games and listening to music as well.</p>
                 <img src="/media/me!.jpg" height="400" width="400"/>
             </div>
 
