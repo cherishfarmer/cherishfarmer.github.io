@@ -30,7 +30,7 @@ export const About = () => {
 
                     In my free time, I do game development, weight-lift, thrift, and try new cafes. I love playing video
                 games and listening to music as well.</p>
-                <img src="/media/me!.jpg" height="400" width="400"/>
+                <img src="/media/me!.jpg"/>
             </div>
 
             {isMobile ?

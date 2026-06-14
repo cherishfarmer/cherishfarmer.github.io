@@ -13,14 +13,15 @@ html {
 }
 
 body {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: clamp(20px, 5vw, 100px);
+  padding-right: clamp(20px, 5vw, 100px);
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   background-color: var(--espresso);
   color: var(--cream);
   max-width: 100vw;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .title {
@@ -99,16 +100,16 @@ footer {
 
 .bio {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr auto;
+  gap: 2em;
   width: 100%;
+  align-items: start;
 }
 
 .bio img {
-  float: right;
   opacity: 80%;
-  height: 25em;
-  width: auto;
-  margin-left: 5em;
+  width: min(25em, 100%);
+  height: auto;
   margin-top: 20px;
   z-index: 5;
   border-radius: 25%;
@@ -117,8 +118,7 @@ footer {
 }
 
 .bio p {
-  float: left;
-  padding-right: 20%;
+  padding-right: 10%;
 }
 
 .about-me-bio {
@@ -385,6 +385,12 @@ img.art-rect {
   gap: 1em;
 }
 
+@media screen and (min-width: 1200px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media screen and (max-width: 480px) {
   .projects-container {
     grid-template-columns: 1fr;
@@ -544,8 +550,8 @@ img.art-rect {
   }
 
   body {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: clamp(15px, 5vw, 20px);
+    padding-right: clamp(15px, 5vw, 20px);
   }
 
   .short-bio {
@@ -599,25 +605,22 @@ img.art-rect {
   }
 
   .bio {
-    display: grid;
     grid-template-columns: 1fr;
-    float: none;
+    gap: 0;
     margin: 0;
     width: 100%;
   }
 
   .bio p {
-    float: none;
     padding-right: 0;
     width: 100%;
   }
 
   .bio img {
-    height: auto;
     width: 100%;
     max-width: 300px;
     justify-self: center;
-    margin-left: 0;
+    margin-top: 10px;
   }
 
   .bar, .bar-long {
