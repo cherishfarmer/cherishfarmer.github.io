@@ -62,6 +62,14 @@ export const Projects = () => {
                     />
 
                     <ProjectContainer
+                        href="https://vpog.github.io/vpog-site/"
+                        title=" Vanderbilt: Programmers of Gaming Site (2025)"
+                        description="Official website for Vanderbilt's Programmers of Gaming club, featuring information about the organization, its members, and ongoing game projects. (HTML, CSS, JavaScript)"
+                        src="/project-images/vpog-ss.png"
+                        github="https://github.com/cherishfarmer/vpog-site"
+                    />
+
+                    <ProjectContainer
                         href="https://github.com/VPog"
                         title=" Coffeepocalypse (2024-present)"
                         description="Run a cafe by day, and survive scrounging for
